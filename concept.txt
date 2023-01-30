@@ -26,3 +26,7 @@ div:hover {
 div {
   transition: width 2s, height 4s;
 }
+
+----->IMPORTANT<--------
+How to remove remote origin-->
+git remote rm origin-->that will work
