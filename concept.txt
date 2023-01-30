@@ -1,0 +1,28 @@
+---->IMPORTANT<-----
+transform-origin:50%;
+by default:50%
+
+tranform-origin:100%;
+last p origin aa jaaega
+
+--->CSS TRANSITION<----------
+CSS transitions allows you to change property values smoothly, over a given duration.
+transition-->shorthand
+1)transition-delay
+2)transition-duration
+3)transition-property
+4)transition-timing-function
+
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s;
+}
+div:hover {
+  width: 300px;
+}
+-->different transition at the same time<---
+div {
+  transition: width 2s, height 4s;
+}

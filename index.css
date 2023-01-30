@@ -1,0 +1,91 @@
+/* css reset */
+*{
+    padding: 0;
+    margin: 0;
+    background-repeat: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+/* home section start */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red; */
+    background-image: url("./blue.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* home sectin end */
+/* circle starts */
+.clockFace{
+    width: 50rem;
+    height: 50rem;
+    border-radius: 50%;
+    border: 2rem solid white;
+    position: relative;
+    background-image: url("./clock.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* circle close */
+/* hand starts */
+.hand{
+    width: 48%;
+    height: 0.8rem;
+    position: absolute;
+    border-radius: 1.3rem;
+    top: 48%;
+    /* left: 3%; */
+    transform-origin:98% ; /*Important*/
+    background-color: black;
+    transform: rotate(90deg);
+    /* transition: all 0.05s; */
+    transition-timing-function: cubic-bezier(0, 1.73, 0.58, 1);
+}
+/* hand end */
+.hand.secondHand{
+    width: 48%!important;
+    left: 3%;
+}
+.hand.hourHand{
+    width: 40%!important;
+    left: 12%;
+}
+.hand.minHand{
+    width: 45%!important;
+    left: 6%;
+}
+/* media query starts */
+@media only screen and (min-width:480px){
+    html{
+       font-size: 15%;
+    }
+}
+@media only screen and (max-width:480px){
+    html{
+       font-size: 25%;
+    }
+}
+@media only screen and (max-width:780px){
+    html{
+       font-size: 45%;
+    }
+}
+@media only screen and (max-width:1080px){
+    html{
+       font-size: 55%;
+    }
+}
+@media only screen and (min-width:1080px){
+    html{
+       font-size: 62.5%;
+    }
+}
+/* media query ends */
